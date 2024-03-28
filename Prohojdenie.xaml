@@ -1,0 +1,36 @@
+﻿<Page x:Class="tester_wpf.Prohojdenie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tester_wpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="450"
+      Title="prohojdenie_testa">
+
+    <Grid>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="_message" TextWrapping="Wrap" Text="" Grid.Column="0"  Grid.Row="0" FontSize="16" FontFamily="Arial Black" TextAlignment="Center" Foreground="Black" FontWeight="Bold"/>
+        <TextBlock x:Name="_title" TextWrapping="Wrap" Text="" Grid.Column="0"  Grid.Row="1" FontSize="36" FontFamily="Arial Black" TextAlignment="Center"  FontWeight="Black"/>
+        <TextBlock x:Name="_desc"  TextWrapping="Wrap" Grid.Row="2" Grid.Column="0" FontSize="20" FontFamily="Arial Black" Foreground="Black" TextAlignment="Center" FontWeight="Bold"/>
+        <Button x:Name="_1answ" Content="" Click="_1answ_Click" Background="purple" Grid.Row="3" />
+        <Button x:Name="_2answ" Content="" Background="purple" Grid.Row="4" Click="_2answ_Click"/>
+        <Button x:Name="_3answ" Content="" Background="purple" Grid.Row="5" Click="_3answ_Click"/>
+
+    </Grid>
+</Page>
